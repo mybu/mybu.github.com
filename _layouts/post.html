@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="col-md-11">
+        <div id="post-content" class="panel panel-pithy post">
+            <div class="panel-heading">
+                <h3 class="title">
+                  <i class="fa fa-bookmark-o"></i><i class="space"></i>{{page.title}}
+                </h3>
+                <ul class="info">
+                    <i class="fa fa-calendar"></i>
+                    {{ page.date | date: "%Y" }}年{{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日
+                    <i class="space"></i>
+                    <i class="fa fa-archive"></i>
+                    <a class="tag" href="{{ site.blog.url }}/category/#{{ page.categories }}">{{ page.categories }}</a> 
+                    <i class="space"></i>
+                    <i class="fa fa-tags"></i>
+                    {% for tag in page.tags %}
+                        <a class="tag" href="{{ site.blog.url }}/tag/#{{ tag }}">{{ tag }}</a>
+                        <i class="space"></i>
+                    {% endfor %}
+                    <i class="space"></i> 字数:{{page.content | size |divided_by:2}}
+                </ul>
+            </div>
+            <div class="panel-body content">
+                {{content}}
+            </div>
+            <div class="navbar panel-footer operate" align="center">
+              <form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
+              <input name="optEmail" type="hidden" value="chrispher2012@gmail.com"/>
+              <input name="payAmount" type="hidden" value="10"/>
+              <input id="title" name="title" type="hidden" value=""/>
+              <input name="memo" type="hidden" value="给Chrispher Guan的Blog打赏"/>
+              <input name="pay" type="image" value="打赏" src="/assets/images/alipay.png"/>
+              </form>
+            </div>
+            <div class="navbar pager">
+                {% if page.previous %}
+                <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}">← {{ page.previous.title }}</a></li>
+                {% else %}
+                <span class="previous">上一篇&nbsp;</span>
+                {% endif %}
+                {% if page.next %}
+                <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}"> → {{ page.next.title }}</a></li>
+                {% else %}
+                <span class="next">下一篇&nbsp;</span>
+                {% endif %}
+            </div>
+
+            {% include share.html%}
+        </div>
+        {% include comment.html%}
+    </div>
+</div>
