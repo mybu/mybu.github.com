@@ -5,7 +5,7 @@ paginate: 6
 paginate_path: page/:num
 
 blog:
-    name: bigBangRunner
+    name: mybu
     description: Web Software Engineer
     title: Web Software Engineer
     keywords: Web Software Engineer
