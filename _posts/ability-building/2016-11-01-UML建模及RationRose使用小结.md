@@ -4,9 +4,14 @@ title: UML建模及RationalRose使用小结
 description: 梳理自己在工作中的总结 
 tags: 分析与设计
 ---
+---
+layout: single
+title: UML建模及RationRose使用小结
+description: 工作总结
+tags:需求建模及分析 
+---
 
-
-
+# UML建模
 1.	UML介绍
 2.	UML结构及思想
 2.1.	UML包含的基本概念
@@ -35,6 +40,11 @@ tags: 分析与设计
 2.4.1.	UML
 3.	UML使用场景
 
- 
-1.	Rational Rose介绍
-2.	Rational Rose使用
+# Rational Rose使用 
+##1.	Rational Rose介绍
+>1. rose是进行UML建模的一种工具，是一种工具。
+
+##2.	Rational Rose使用
+1. 使用Rational Rose去反转分析，有一个需要突破的地方就是反转很容易出错。导致看得UML图经常有问题。
+>从这点上说，Rose更多地用在刚开始的分析上。
+
