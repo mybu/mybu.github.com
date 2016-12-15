@@ -1,6 +1,6 @@
 ---
 layout: single
-title: SQL性能优化 
+title: Oracle SQL性能优化 
 description: 梳理自己在工作中的总结 
 tags: 性能优化
 ---

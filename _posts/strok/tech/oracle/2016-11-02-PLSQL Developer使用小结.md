@@ -1,6 +1,6 @@
 ---
 layout: single
-title: PLSQL使用小结 
+title: PLSQL Developer使用小结 
 description: 梳理自己在工作中的总结 
 tags: 技术
 ---
