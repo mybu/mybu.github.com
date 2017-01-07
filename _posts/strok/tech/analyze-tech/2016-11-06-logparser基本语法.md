@@ -1,6 +1,6 @@
 ---
 layout: single
-title: logparser使用小结
+title: logparser基本语法
 description: 工作中用到的技术
 tags: 分析技术
 ---
